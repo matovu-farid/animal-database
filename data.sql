@@ -5,3 +5,12 @@
  INSERT INTO animals ( name, date_of_birth, weight_kg, neutered, escape_attempts ) VALUES ('Gabumon' , '2018-11-15', 8.00 , TRUE, 2);
  INSERT INTO animals ( name, date_of_birth, weight_kg, neutered, escape_attempts ) VALUES ('Pikachu' , '2021-01-07', 15.04 , FALSE, 1);
  INSERT INTO animals ( name, date_of_birth, weight_kg, neutered, escape_attempts ) VALUES ('Devimon' , '2017-05-12', 11.00 , TRUE, 5);
+ INSERT INTO animals ( name, date_of_birth, weight_kg, neutered, escape_attempts ) VALUES 
+ ('Charmander' , '2020-02-08', -11.00 , FALSE, 0),
+ ('Plantmon' , '2021-11-15', -5.70 , TRUE, 2),
+ ('Squirtle' , '1993-04-02', -12.13 , FALSE, 3),
+ ('Angemon' , '2005-06-12', -45.00 , TRUE, 1),
+ ('Boarmon' , '2005-06-07', 20.40 , TRUE, 7),
+ ('Blossom' , '1998-10-13', 17.00 , TRUE, 3),
+ ('Ditto' , '2022-05-14', 22.00 , TRUE, 4);
+ 
