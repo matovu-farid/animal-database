@@ -97,6 +97,58 @@ GROUP BY o.full_name
 SELECT * FROM COUNTCTE
 WHERE no_of_animals = (SELECT MAX(no_of_animals) from COUNTCTE);
 
+SELECT v.name as vet, a.name as animal, vi.date_of_visit FROM visits vi
+JOIN animals a ON a.id = vi.animal_id
+JOIN vets v ON v.id = vi.vet_id
+WHERE v.name = 'William Tatcher'
+ORDER BY  vi.date_of_visit DESC
+LIMIT 1;
+
+
+SELECT v.name, COUNT(a.name) FROM visits vi
+JOIN animals a ON a.id = vi.animal_id
+JOIN vets v ON v.id = vi.vet_id
+WHERE v.name = 'Stephanie Mendez'
+GROUP BY v.name;
+
+SELECT v.name as vets, STRING_AGG( s.name ,', ') as speciality FROM vets v
+LEFT JOIN specializations sp  ON sp.vet_id = v.id
+LEFT JOIN species s ON s.id = sp.species_id
+GROUP BY v.name;
+
+SELECT a.name as animal, COUNT(a.name) FROM visits v
+JOIN animals a ON a.id = v.animal_id
+GROUP BY a.name
+ORDER BY COUNT(a.name) DESC
+LIMIT 1;
+
+SELECT a.name as animal,  vi.date_of_visit, v.name as vet FROM visits as vi
+JOIN animals a ON a.id = vi.animal_id
+JOIN vets v ON v.id = vi.vet_id
+WHERE v.name = 'Maisy Smith'
+ORDER BY vi.date_of_visit
+LIMIT 1;
+
+SELECT a.name as animal,  vi.date_of_visit, v.name as vet FROM visits as vi
+JOIN animals a ON a.id = vi.animal_id
+JOIN vets v ON v.id = vi.vet_id
+ORDER BY vi.date_of_visit DESC
+LIMIT 1;
+
+
+SELECT COUNT(DISTINCT a.name) FROM animals a 
+LEFT JOIN visits vi ON a.id = vi.animal_id
+LEFT JOIN specializations sp ON vi.vet_id = sp.vet_id 
+WHERE  a.species_id <> sp.species_id OR sp.species_id IS NULL;
+
+SELECT  a.name as animal, COUNT(a.name)  FROM visits as vi
+JOIN animals a ON a.id = vi.animal_id
+JOIN vets v ON v.id = vi.vet_id
+WHERE v.name = 'Maisy Smith'
+GROUP BY  a.name
+ORDER BY COUNT(a.name) DESC
+LIMIT 1;
+
 
 
 
