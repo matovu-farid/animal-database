@@ -33,6 +33,16 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
+## Before
+  ![image](./images/query-1-before.PNG)
+  ![image](./images/query-2-before.PNG)
+  ![image](./images/query-3-before.PNG)
+## After 
+  ![image](./images/query-1-after.PNG)
+  ![image](./images/query-2-after.PNG)
+  ![image](./images/query-3-after.PNG)
+
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
