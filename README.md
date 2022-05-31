@@ -3,6 +3,10 @@
 > This template should be used for database related projects at Microverse.
 > Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
 
+## DIAGRAM IMAGE
+
+![screenshot](./images/VET_CLINIC-2022-03-25_20-18.png)
+
 
 ## Getting Started
 
@@ -37,7 +41,7 @@ Feel free to check the [issues page](../../issues/).
   ![image](./images/query-1-before.PNG)
   ![image](./images/query-2-before.PNG)
   ![image](./images/query-3-before.PNG)
-## After 
+## After
   ![image](./images/query-1-after.PNG)
   ![image](./images/query-2-after.PNG)
   ![image](./images/query-3-after.PNG)
